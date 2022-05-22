@@ -1,0 +1,208 @@
+/* Основний колір тексту  #757575;*/
+/* Вторичний колір тексту #212121;*/
+/* Білий колір тексту #FFFFFF; */
+/* Акцентний колір тексту #2196F3; */
+/* колір для тексту Футера rgba(255, 255, 255, 0.6); */
+/* Основний колір фону #E5E5E5; */
+/* Вторичний колір фону #F5F4FA; */
+/* Колір Хедера #FFFFFF;  */
+/* Колір фону Героя і Хутера #2F303A; */
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-color-text: #2196F3;
+	--light-color: #FFFFFF;
+	--transparent-color-text: rgba(255, 255, 255, 0.6);
+	--background-page-color: #E5E5E5;
+	--background-second-color: #F5F4FA;
+	--background-accent-color: #2F303A;
+}
+/* Body */
+.page {
+	background-color:var(--background-page-color);
+		font-family: Roboto,sans-serif;
+		color: var(--primary-text-color);
+	
+}
+/* Body page-portfolio */
+.page-portfolio {
+	background-color:var(--background-page-color);
+	font-family: Roboto, sans-serif;
+	color: var(--title-text-color)
+}
+
+ul {
+	list-style: none;
+}
+
+/* Header */
+.page-header {
+	background-color:var(--light-color);
+}
+
+/* Logo */
+.logo {
+	color:var(--title-text-color);
+	font-family: Raleway,sans-serif;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1.19;
+		text-decoration: none;
+}
+.accent {
+	color: var(--accent-color-text);
+}
+/* Site NAV */
+.site-nav .link {
+color: var(--title-text-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+text-decoration: none;
+
+
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+	color:var(--accent-color-text);
+}
+/* Contacts */
+.contacts .link {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.33;
+		color: var(--primary-text-color);
+		text-decoration: none;
+}
+.contacts .link:hover, 
+.contacts .link:focus {color: var(--accent-color-text);}
+
+/* Hero */
+.hero {
+		background-color: var(--background-accent-color);
+}
+.hero-title {
+font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--light-color);
+}
+/* Buttons */
+.button {
+	cursor: pointer;
+}
+
+.hero .button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border: 0px;
+	color: var(--light-color);
+	background-color: var(--accent-color-text);
+}
+.gallery-navigation .button  {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	color: var(--title-text-color);
+   background-color: var(--background-second-color);
+	border: 0px;
+}
+.gallery-navigation .button:hover,
+.gallery-navigation .button:focus {
+background-color: var(--accent-color-text);
+color: var(--light-color);
+}
+
+/* section */
+.section  
+.section-title {
+	font-weight: 700;
+		font-size: 36px;
+		line-height: 1.17;
+		text-align: center;
+	color:var(--title-text-color);
+}
+.comands {
+background-color:var(--background-second-color);
+}
+
+/* specifics */
+.specifics .title {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		text-transform: uppercase;
+	color: var(--title-text-color);
+}
+.specifics-text {
+	font-weight: 400;
+		font-size: 14px;
+		line-height: 1.7;
+}
+
+/* Info */
+.section-info {
+	font-weight: 500;
+		font-size: 16px;
+		line-height: 1.19;
+		text-align: center;
+		color: var(--title-text-color);
+}
+.text-info {
+	font-weight: 400;
+		font-size: 16px;
+		line-height: 1.19;
+		text-align: center;
+}
+
+/* Portfolio main */
+.gallery-title {
+	font-weight: 700;
+		font-size: 18px;
+		line-height: 2;
+}
+.gallery-text {
+	font-weight: 400;
+		font-size: 16px;
+		line-height: 1.9;
+		color: var(--primary-text-color);
+}
+
+/* Footer */
+.page-footer {
+	background-color: var(--background-accent-color);
+}
+.logo-footer {
+	color: var(--light-color);
+	font-family: Raleway, sans-serif;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1.19;
+		text-decoration: none;
+}
+.contacts .info-map {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.7;
+		color: var(--light-color);
+}
+.contacts .link-footer {
+	   font-weight: 400;
+		font-size: 14px;
+		line-height: 1.7;
+		color: var(--transparent-color-text);
+		text-decoration: none;
+}
+.contacts .link-footer:hover,
+.contacts .link-footer:focus {
+	color: var(--accent-color-text);
+}
+		
+		
