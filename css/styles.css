@@ -17,20 +17,15 @@
 	--background-second-color: #F5F4FA;
 	--background-accent-color: #2F303A;
 }
+
 /* Body */
-.page {
-	background-color:var(--background-page-color);
+body {
+	background-color:var(--light-color);
 		font-family: Roboto,sans-serif;
 		color: var(--primary-text-color);
-	
-}
-/* Body page-portfolio */
-.page-portfolio {
-	background-color:var(--background-page-color);
-	font-family: Roboto, sans-serif;
-	color: var(--title-text-color)
-}
-
+		font-size: 14px;
+		letter-spacing: 0.03em;
+     }
 ul {
 	list-style: none;
 }
@@ -56,9 +51,9 @@ ul {
 .site-nav .link {
 color: var(--title-text-color);
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 text-decoration: none;
+letter-spacing: 0.02em;
 
 
 }
@@ -66,13 +61,18 @@ text-decoration: none;
 .site-nav .link:focus {
 	color:var(--accent-color-text);
 }
+
+.link.current {
+	color: var(--accent-color-text);
+}
+
 /* Contacts */
 .contacts .link {
 		font-weight: 500;
-		font-size: 14px;
 		line-height: 1.33;
 		color: var(--primary-text-color);
 		text-decoration: none;
+		letter-spacing: 0.02em;
 }
 .contacts .link:hover, 
 .contacts .link:focus {color: var(--accent-color-text);}
@@ -85,6 +85,7 @@ text-decoration: none;
 font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
+	letter-spacing: 0.06em;
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--light-color);
@@ -113,17 +114,26 @@ font-weight: 900;
 	color: var(--title-text-color);
    background-color: var(--background-second-color);
 	border: 0px;
+	background: #F5F4FA;
+	border-radius: 4px;
+   padding: 6px 22px;
+	font-family: inherit;
 }
+
 .gallery-navigation .button:hover,
 .gallery-navigation .button:focus {
 background-color: var(--accent-color-text);
 color: var(--light-color);
 }
 
+.button .active {
+	background-color: var(--accent-color-text);
+		color: var(--light-color);
+}
+
 /* section */
 .section  
 .section-title {
-	font-weight: 700;
 		font-size: 36px;
 		line-height: 1.17;
 		text-align: center;
@@ -135,15 +145,12 @@ background-color:var(--background-second-color);
 
 /* specifics */
 .specifics .title {
-		font-weight: 700;
-		font-size: 14px;
 		line-height: 1.14;
 		text-transform: uppercase;
 	color: var(--title-text-color);
 }
 .specifics-text {
 	font-weight: 400;
-		font-size: 14px;
 		line-height: 1.7;
 }
 
@@ -164,6 +171,7 @@ background-color:var(--background-second-color);
 
 /* Portfolio main */
 .gallery-title {
+	color: #212121;
 	font-weight: 700;
 		font-size: 18px;
 		line-height: 2;
@@ -189,13 +197,11 @@ background-color:var(--background-second-color);
 }
 .contacts .info-map {
 		font-weight: 400;
-		font-size: 14px;
 		line-height: 1.7;
 		color: var(--light-color);
 }
 .contacts .link-footer {
 	   font-weight: 400;
-		font-size: 14px;
 		line-height: 1.7;
 		color: var(--transparent-color-text);
 		text-decoration: none;
